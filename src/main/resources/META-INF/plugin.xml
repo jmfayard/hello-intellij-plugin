@@ -16,4 +16,12 @@
         <listener class="com.github.jmfayard.hellointellijplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.jmfayard.hellointellijplugin.GreetingAction"
+                class="com.github.jmfayard.hellointellijplugin.GreetingAction" text="Bonjouuuurrrrr"
+                description="Cette action va vous dire bonjour">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt B"/>
+        </action>
+    </actions>
 </idea-plugin>
